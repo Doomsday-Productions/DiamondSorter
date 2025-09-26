@@ -1,0 +1,232 @@
+# 🔷 Diamond Sorter - Advanced Stealer Log Analysis Tool
+
+**Diamond Sorter** is a comprehensive utility designed for cybersecurity researchers and analysts to efficiently sort, analyze, and process stealer logs. It helps create, manage, and edit high-quality targeted combolists, leads, account data, and email collections from various malware sources.
+
+![Diamond Sorter Interface](https://github.com/OpensourcedPro/Diamond-Sorter/assets/139492588/8aa285ac-b0c2-44d1-aa12-fc36f0e94fb4)
+
+## 🎯 What are Stealer Logs?
+
+Stealer logs are data collections captured by various types of malware designed to steal sensitive information from infected systems. When executed, these malicious programs typically search for and collect:
+
+- **Browser Credentials**: Saved login credentials, passwords, and autofill data
+- **Financial Information**: Credit card details, banking credentials, and payment methods
+- **Cryptocurrency Wallets**: Private keys, seed phrases, and wallet access
+- **Personal Data**: Desktop files, documents, and screenshots
+- **Gaming Credentials**: Steam, Epic Games, and other gaming platform accounts
+- **System Information**: Hardware details, installed software, and system configurations
+
+This stolen information is then transmitted to the attacker's command and control server for malicious purposes including identity theft, financial fraud, and espionage.
+
+> ⚠️ **Important Note**: Most antivirus software cannot detect stealer malware, making it a significant threat to cybersecurity.
+
+As a cybersecurity researcher working with stealer logs daily, this tool was developed to automate and streamline the analysis process.
+
+
+
+## 🚀 Quick Start
+
+### Installation
+1. **Install dependencies:**
+   ```bash
+   python install.py
+   ```
+
+2. **Run the application:**
+   ```bash
+   python main.py
+   ```
+   Or double-click `launch_diamond_sorter.bat` on Windows
+
+## ✨ Core Features
+
+### 🔍 **Advanced Zoom System**
+- **Visual Zoom Controls**: 🔍+ and 🔍- buttons in the menu bar
+- **Keyboard Shortcuts**: 
+  - `Ctrl + =` - Zoom In (10% increments)
+  - `Ctrl + -` - Zoom Out (10% increments)  
+  - `Ctrl + 0` - Reset to 100%
+- **Zoom Range**: 50% to 300% scaling
+- **Theme Preservation**: Original colors and styling maintained during zoom
+
+### 📊 **Multi-Tab Interface**
+- **Main Processing Tab**: Core data sorting and analysis
+- **Removed Data Tab**: Filtered and excluded data tracking
+- **Console Tab**: Real-time processing logs and debug information
+
+### 🎛️ **Extension Dock Widget**
+- **URL Tools**: Advanced URL processing and analysis
+- **Request Manager**: HTTP request handling and management
+- **Cookie Analyzer**: Cookie data extraction and sorting
+- **Email Domain Sorter**: Email address categorization
+- **Configuration Manager**: Settings and preferences
+- **Log Hunter**: Advanced log file searching
+- **Chat System**: Integrated communication features
+
+## 🔧 Detailed Widget Features
+
+### 📝 **Text Processing Widgets**
+- **Input Text Browser**: Multi-line text input with syntax highlighting
+- **Output Text Browser**: Processed results display with formatting
+- **Removed Data Browser**: Filtered data tracking and analysis
+- **Console Widget**: Real-time logging and debug information
+
+### 🎚️ **Control Panels**
+- **Directory Path Selector**: File and folder path management
+- **Thread Control**: Multi-threading configuration (1-50 threads)
+- **Progress Bar**: Real-time processing progress indication
+- **Line Counters**: Live statistics for input/output data
+
+### 🔍 **Analysis Tools**
+- **Password Weight Sorter**: Advanced password strength analysis
+- **Email Domain Extractor**: Email address categorization and sorting
+- **IP Address Extractor**: Network address identification and extraction
+- **Phone Number Extractor**: International phone number detection
+- **Credit Card Data Sorter**: Financial information processing
+- **Crypto Wallet Analyzer**: Cryptocurrency wallet data extraction
+
+### 🍪 **Cookie Management**
+- **Domain-based Sorting**: Cookie organization by website domain
+- **Quantity Analysis**: Cookie count and frequency analysis
+- **Value Extraction**: Cookie value parsing and categorization
+- **Netscape to JSON**: Format conversion utilities
+- **Keyword Filtering**: Advanced cookie filtering by keywords
+
+### 📁 **File Processing**
+- **Stealer Log Formats**: Support for multiple stealer types:
+  - Redline/Meta Stealer
+  - Racoon Stealer  
+  - Whitesnake Stealer
+  - Worldwind/Prynt Stealer
+  - Titan Stealer
+- **File Tree Structure**: Hierarchical file organization
+- **Duplicate Removal**: Advanced deduplication algorithms
+- **Format Conversion**: Multiple output format support
+
+### 🏦 **Banking Features**
+- **Security Question Capture**: Security question extraction
+- **Banking Log Analysis**: Financial data processing
+- **Credit Card Sorting**: CC data with/without CVC
+- **Remittance Analysis**: Money transfer data processing
+- **2FA Bypass Detection**: Two-factor authentication analysis
+
+### 🎮 **Gaming & Social**
+- **Steam Account Processing**: Gaming platform data extraction
+- **Discord Data Sorting**: Social platform information
+- **Telegram Folder Analysis**: Messaging app data processing
+- **Gaming Credential Extraction**: Multi-platform gaming accounts
+
+### 🔐 **Security & Encryption**
+- **PGP Key Extraction**: Encryption key processing
+- **Authy Desktop Analysis**: 2FA application data
+- **Browser Extension Data**: Extension credential extraction
+- **Desktop Wallet Analysis**: Local wallet data processing
+
+### 📊 **Statistics & Reporting**
+- **Real-time Statistics**: Live data processing metrics
+- **Domain Statistics**: Website and domain analysis
+- **File Statistics**: File type and size analysis
+- **Data Quality Metrics**: Data validation and quality scoring
+
+### 🎨 **User Interface Features**
+- **Dark/Light Themes**: Multiple visual themes
+- **Customizable Layout**: Resizable and dockable widgets
+- **System Tray Integration**: Background operation support
+- **Keyboard Shortcuts**: Comprehensive hotkey support
+- **Responsive Design**: Adaptive window sizing
+
+### 🔧 **Advanced Features**
+- **Multi-threading Support**: Parallel processing capabilities
+- **Memory Management**: Efficient resource utilization
+- **Error Handling**: Comprehensive error reporting and recovery
+- **Logging System**: Detailed operation logging
+- **Configuration Management**: Persistent settings storage
+
+## 🛠️ Technical Specifications
+
+### **System Requirements**
+- **Operating System**: Windows 10/11, Linux, macOS
+- **Python Version**: 3.8+ (3.11 recommended)
+- **Memory**: 4GB RAM minimum, 8GB recommended
+- **Storage**: 500MB free space
+- **Display**: 1024x768 minimum resolution
+
+### **Dependencies**
+- **Core Framework**: PyQt5 5.15.10
+- **Data Processing**: pandas, numpy, beautifulsoup4
+- **Network**: requests, urllib3
+- **Image Processing**: Pillow (PIL)
+- **System Integration**: psutil, pyperclip
+- **Cryptography**: cryptography
+- **Progress Tracking**: tqdm
+- **System Tray**: pystray
+
+### **Supported File Formats**
+- **Stealer Logs**: .txt, .log, .json, .csv
+- **Browser Data**: Chrome, Firefox, Edge, Opera
+- **Crypto Wallets**: Bitcoin, Ethereum, Litecoin, and more
+- **Gaming Platforms**: Steam, Epic Games, Origin, Uplay
+- **Social Media**: Discord, Telegram, WhatsApp
+- **Banking Data**: Various financial institution formats
+
+## 📋 Usage Examples
+
+### **Basic Stealer Log Processing**
+1. **Load Data**: Paste or load stealer log data into the input text area
+2. **Select Format**: Choose the appropriate stealer format from the dropdown
+3. **Configure Settings**: Set thread count and processing options
+4. **Process Data**: Click the appropriate sorting button for your data type
+5. **Review Results**: Check the output tab for processed results
+6. **Export Data**: Save results to file using the save button
+
+### **Advanced Cookie Analysis**
+1. **Load Cookie Data**: Import Netscape or JSON cookie files
+2. **Domain Sorting**: Use domain-based sorting for organization
+3. **Value Analysis**: Extract and analyze cookie values
+4. **Keyword Filtering**: Filter cookies by specific keywords
+5. **Format Conversion**: Convert between Netscape and JSON formats
+
+### **Banking Data Extraction**
+1. **Load Banking Logs**: Import financial data from stealer logs
+2. **Credit Card Processing**: Extract and sort CC data with/without CVC
+3. **Security Questions**: Capture security question answers
+4. **2FA Analysis**: Identify two-factor authentication data
+5. **Remittance Processing**: Analyze money transfer information
+
+## 🔒 Security & Privacy
+
+### **Data Handling**
+- **Local Processing**: All data processing occurs locally on your machine
+- **No Network Transmission**: No data is sent to external servers
+- **Memory Management**: Secure memory handling with automatic cleanup
+- **File Security**: Temporary files are securely deleted after processing
+
+### **Best Practices**
+- **Isolated Environment**: Run in a virtual machine or isolated system
+- **Regular Updates**: Keep the application updated for security patches
+- **Data Backup**: Always backup important data before processing
+- **Access Control**: Restrict access to authorized personnel only
+
+## 🆘 Support & Community
+
+### **Getting Help**
+- **Documentation**: Comprehensive user guides and API documentation
+- **Community Support**: Active community forums and discussions
+- **Issue Tracking**: GitHub issues for bug reports and feature requests
+
+### **Professional Support**
+For direct support and advanced features, join our community:
+
+**Reaper Market Chat** - [![Telegram](https://cdn.icon-icons.com/icons2/2530/PNG/512/telegram_button_icon_151837.png)](https://t.me/+FtjFQJNPSWxiZmYx)
+
+**Reaper Market Channel** - [![Telegram](https://cdn.icon-icons.com/icons2/2530/PNG/512/telegram_button_icon_151837.png)](https://t.me/+NqSqu1v10bwxNTcx)
+
+## 📄 License & Legal
+
+This software is provided for educational and research purposes only. Users are responsible for complying with all applicable laws and regulations in their jurisdiction. The developers are not responsible for any misuse of this software.
+
+---
+
+**⚠️ Disclaimer**: This tool is designed for cybersecurity research and legitimate security analysis purposes only. Users must ensure they have proper authorization before analyzing any data and must comply with all applicable laws and regulations.
+
+#   D i a m o n d S o r t e r  
+ 
